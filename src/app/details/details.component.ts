@@ -3,11 +3,13 @@ import {ActivatedRoute} from '@angular/router';
 import {HousingService} from '../housing.service';
 import {HousingLocation} from '../housing-location/housinglocation';
 import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-details',
   imports: [
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgOptimizedImage
   ],
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss'
